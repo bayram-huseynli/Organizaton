@@ -1,0 +1,23 @@
+databaseChangeLog:
+  - changeSet:
+      id: 20230924-01
+      author: BayramHuseynli
+      changes:
+        - createTable:
+            tableName: users
+            columns:
+              - column:
+                name: id
+                type: BINGINT
+                autoIncrement: true
+                constraints:
+                 primaryKey: true
+                 primaryKeyName: users_pkey
+                 nullable: false
+              - column:
+                name: name
+                type: VARCHAR(255)
+              - column:
+                  name: password
+                  type: VARCHAR(255)
+

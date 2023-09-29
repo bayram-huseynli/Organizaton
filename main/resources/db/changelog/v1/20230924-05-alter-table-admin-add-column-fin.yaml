@@ -1,0 +1,12 @@
+databaseChangeLog:
+  - changeSet:
+      id: 20230924-02
+      author: BayramHuseynli
+      changes:
+        -addColumn:
+          tableName: users
+          columns:
+            -column:
+              name: fin_code
+              type: INT
+

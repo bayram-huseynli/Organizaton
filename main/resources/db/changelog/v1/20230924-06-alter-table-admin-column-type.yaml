@@ -1,0 +1,9 @@
+databaseChangeLog:
+  - changeSet:
+      id: 20230924-02
+      author: BayramHuseynli
+      changes:
+        - modifyDataType:
+            tableName: users
+            columnName: fin_code
+            newDataType: VARCHAR(255)
